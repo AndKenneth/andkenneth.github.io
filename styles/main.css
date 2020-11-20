@@ -1,0 +1,24 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    background-color: hsl(210deg, 30%, 8%);
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    color: rgb(255, 10, 120);
+    font-style: bold;
+    font-size: 36;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:
+        1fr
+        min(65ch, 100%)
+        1fr;
+}
+
+.wrapper > * {
+    grid-column: 2;
+}
