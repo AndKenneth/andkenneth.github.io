@@ -59,13 +59,25 @@ h2 {
     gap: 1.5em;
 }
 
+.link-wrapper {
+    text-decoration: none;
+    color: white;
+}
+
 .content-item {
     padding: 32px;
     background-color: hsl(210deg, 22%, 15%);
     border-radius: 8px;
 }
 
+
 .content-title {
     font-family: 'Karla', sans-serif;
-    font-size: 38;
+    font-size: 28;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+
+.link-wrapper:hover > .content-title {
+    color: rgb(255, 10, 120);
 }
