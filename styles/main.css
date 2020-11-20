@@ -2,13 +2,28 @@ body {
     font-family: 'Inconsolata', monospace;
     color: white;
     background-color: hsl(210deg, 30%, 8%);
+    font-size: 19px;
+}
+
+*, ::before, ::after {
+    line-height: 1.6;
+}
+
+::selection {
+    background-color: cyan;
 }
 
 h1 {
     font-family: 'Karla', sans-serif;
     color: rgb(255, 10, 120);
     font-style: bold;
-    font-size: 36;
+    font-size: 46;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-style: bold;
+    font-size: 38;
 }
 
 .wrapper {
@@ -21,4 +36,36 @@ h1 {
 
 .wrapper > * {
     grid-column: 2;
+}
+
+.profile-icon {
+    font-size: 38;
+    height: 2em;
+    border-radius: 50%;
+    border-color: rgb(255, 10, 120);
+    border-width: 2px;
+    border-style: solid;
+    margin-right: 10px;
+    margin-left: 4px;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: grid;
+    gap: 1.5em;
+}
+
+.content-item {
+    padding: 32px;
+    background-color: hsl(210deg, 22%, 15%);
+    border-radius: 8px;
+}
+
+.content-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 38;
 }
