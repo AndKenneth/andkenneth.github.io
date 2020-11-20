@@ -81,3 +81,16 @@ h2 {
 .link-wrapper:hover > .content-title {
     color: rgb(255, 10, 120);
 }
+
+code {
+    background-color: rgb(31, 41, 53);
+    border-radius: 2px;
+    padding: 2px 3px 2px 3px ;
+    white-space: nowrap;
+}
+
+.red-background {
+   background-color: rgb(116, 0, 0);
+    border-radius: 2px;
+    padding: 2px 3px 2px 3px ;
+}

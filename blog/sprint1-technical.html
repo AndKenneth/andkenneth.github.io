@@ -5,31 +5,51 @@
   <title>Stories and Legends (PAGE title) </title>
   <meta charset="UTF-8">
   <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"/>
 </head>
 
 <body>
   <main class="wrapper">
     <h1>CSS Tech - Selectors and what to use where</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest
-        runner.</em> (Optional SUB title) </h2>
+    <h2> A (very) small dive into classes and id's</h2>
     <h3>20 November 2010</h3>
 
     <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his
-      mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short
-      distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
+      On our webpages, we don't generally style things in the same place we lay them out. We put the style in a seperate file specifically designed for styling. But how do we actually point to the elements of the site we actually want to style?
     </p>
+
     <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa
-      people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey
-      over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up
-      properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes)
-      situated at the foot of the hill Whangatauatia.
+      Well in CSS that would be called a selector, where we specify the parts of the site that we want. So if we want to "select" all of the <code>&lth1&gt</code> tags, our CSS selector would simply be <code>h1</code>. However, that means we can only specify every single <code>&lth1&gt</code> tag in the entire document.
     </p>
+
     <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately
-      recognised.
+      If we want to get more specific, we can select exactly what we want by specifying an ID or class. We select an ID by using a <code>#</code>. <code>#heading</code> will select the <code>&lth1 id="heading"&gt</code> tag. Classes are selected using a <code>.</code>, so <code>.wrapper</code> would select <code>&ltdiv class="wrapper"&gt</code>
     </p>
+
+    <h3>But what should we use when?</h3>
+
+    <p>
+      They seem similar, but they have a very important difference. A class can be used as many times as you want, and multiple can be assigned to the same element. If you want to create a class like <code>.red-background {background-color: red;}</code>, then you can slap that sucker on whatever you want to have a red background. <span class="red-background">Easy.</span>
+    </p>
+
+    <p>
+      ID's are a bit different, you can only have one of them per element, and each one has to be entirely unique. Your page will not pass validation if it has the same ID repeated across multiple elements, and who knows what will happen then. They're pretty restrictive that way, but they have some specific uses when using Javascript, and they have one important built in browser function.
+    </p>
+
+    <p>
+      If you put your class name at the end of a link, such as <code style="text-decoration: underline;">https://domain.com/index.html#section3</code>, when clicking that link it will take the user to the element on the page with that specific class. This can be useful if you have a long article or reference site and want to link to a specific section.
+    </p>
+
+    <p>
+      Really, the main question you need to ask yourself is whether you are going to reuse that bit of styling across multiple items. It's probably a good idea to use IDs for things that really only should appear once, like headers and footers. If you think you might use it twice, or if it's the sort of thing that you probably will use again, it would be better to use a class.
+    </p>
+
+    <p>
+      That's it. That's the blog post.
+    </p>
+
   </main>
   <!-- this is a comment. -->
 
